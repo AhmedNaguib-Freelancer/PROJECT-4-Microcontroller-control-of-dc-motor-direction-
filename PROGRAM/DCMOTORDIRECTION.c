@@ -1,0 +1,14 @@
+void main() {
+TRISB=0;
+TRISC=1;
+PORTB=0B00000000;
+while(1)
+{
+if(PORTC.F0==1)
+PORTB=0B00000101;
+else if(PORTC.F1==1)
+PORTB=0B00001010;
+else
+PORTB=0B00000000;
+}
+}
